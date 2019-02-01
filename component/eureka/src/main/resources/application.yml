@@ -1,0 +1,13 @@
+server:
+  port: 8761                    # 指定该Eureka实例的端口
+
+eureka:
+  instance:
+    hostname: eureka-center         # 指定该Eureka实例的主机名
+    health-check-url-path: /health
+    status-page-url-path: /info
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

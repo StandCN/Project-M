@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: user
+  cloud:
+    config:
+      # 要应用的配置文件
+      profile: prod
+      # 要读取的配置文件名
+      name: ${spring.application.name}
+      label: master
+      discovery:
+        enabled: true
+        service-id: configserver
+
+eureka:
+  instance:
+    appname: user
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZoon: http://eureka-center:8761/eureka/

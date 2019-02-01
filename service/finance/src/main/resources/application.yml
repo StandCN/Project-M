@@ -1,0 +1,35 @@
+
+server:
+  port: 50000
+  servlet:
+    context-path: /finance
+
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/m
+    username:
+    password:
+    driver-class-name: org.mariadb.jdbc.Driver
+    hikari:
+      idle-timeout: 3000
+      max-lifetime: 30000
+
+  redis:
+    host: localhost
+  application:
+    name: finance
+  cloud:
+    config:
+      name: ${spring.application.name}
+
+
+debug: true
+eureka:
+  instance:
+    appname: finance
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZoon: http://eureka-center:8761/eureka/
+
+

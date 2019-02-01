@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    config:
+      server:
+        bootstrap: true
+        jdbc:
+          order: 1
+          sql: SELECT KEY, VALUE from PROPERTIES where APPLICATION in (?, 'common') and PROFILE=? and LABEL=?
+  datasource:
+    url: jdbc:mariadb://localhost:3306/m
+    username:
+    password:
+    driver-class-name: org.mariadb.jdbc.Driver
+    hikari:
+      idle-timeout: 3000
+      max-lifetime: 30000
+server:
+  port: 8751
+eureka:
+  instance:
+    appname: configserver
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZoon: http://eureka-center:8761/eureka/

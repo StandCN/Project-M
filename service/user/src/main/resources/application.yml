@@ -1,0 +1,21 @@
+
+server:
+  port: 40000
+  servlet:
+    context-path: /user
+
+spring:
+  cloud:
+    config:
+      name: ${spring.application.name}
+  application:
+    name: user
+
+debug: false
+eureka:
+  instance:
+    appname: ${spring.application.name}
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZoon: http://eureka-center:8761/eureka/
