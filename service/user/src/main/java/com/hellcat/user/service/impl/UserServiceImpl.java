@@ -1,5 +1,6 @@
 package com.hellcat.user.service.impl;
 
+import com.google.common.util.concurrent.RateLimiter;
 import com.hellcat.user.dao.UserRepository;
 import com.hellcat.user.eneity.TblUser;
 import com.hellcat.user.service.UserService;
@@ -25,14 +26,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Iterable<TblUser> listUsers() {
-//        Flux<TblUser> all = userRepository.findAll();
-        return null;
+        return userRepository.findAll();
     }
 
     @Override
     public Optional<TblUser> getUserById(Long id) {
-//        return userRepository.findById(id);
-        return null;
+        RateLimiter
+        return userRepository.findById(id);
     }
 
     @Override

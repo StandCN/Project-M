@@ -30,7 +30,7 @@ public class UserTestController {
 //        return jdbcTemplate.queryForMap(sql);
 //    }
 
-    @Autowired
+//    @Autowired
     private UserService userService;
 
 //    @GetMapping("all")

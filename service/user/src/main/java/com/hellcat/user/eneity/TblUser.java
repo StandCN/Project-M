@@ -13,9 +13,10 @@ public class TblUser {
 
     @Id
     @GeneratedValue
-    private String tblUserId;
+    private Long tblUserId;
     private String username;
     private String password;
+    private byte bizStatus;
     private java.sql.Timestamp createTime;
     private java.sql.Timestamp updateTime;
 
