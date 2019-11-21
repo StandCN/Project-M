@@ -1,12 +1,12 @@
-package com.hellcat.route;
+package com.hellcat.document;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RouteApplication {
+public class DocumentApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RouteApplication.class, args);
+        SpringApplication.run(DocumentApplication.class, args);
     }
 }
