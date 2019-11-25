@@ -1,10 +1,9 @@
 package com.hellcat.user.service;
 
-//import com.hellcat.user.eneity.User;
 
-import com.hellcat.user.eneity.TblUser;
-
-import java.util.Optional;
+import com.hellcat.user.eneity.UserDO;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 /**
  * @author StandCN
@@ -13,10 +12,10 @@ import java.util.Optional;
 public interface UserService {
 
 
-    Iterable<TblUser> listUsers();
+    Flux<UserDO> listUsers();
 
-    Optional<TblUser> getUserById(Long id);
+    Mono<UserDO> getUserById(Long id);
 
-    boolean insertUser(String userName, String password);
+    Mono<UserDO> insertUser(String username, String password);
 
 }
