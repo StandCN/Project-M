@@ -1,12 +1,13 @@
 package com.hellcat.user.service.impl;
 
 import com.hellcat.user.dao.UserRepository;
-import com.hellcat.user.eneity.TblUser;
+import com.hellcat.user.eneity.UserDO;
+import com.hellcat.user.eneity.factory.UserFactory;
 import com.hellcat.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 /**
  * @author StandCN
@@ -23,24 +24,19 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Iterable<TblUser> listUsers() {
+    public Flux<UserDO> listUsers() {
         return userRepository.findAll();
     }
 
     @Override
-    public Optional<TblUser> getUserById(Long id) {
+    public Mono<UserDO> getUserById(Long id) {
 //        RateLimiter.create(1d);
         return userRepository.findById(id);
     }
 
     @Override
-    public boolean insertUser(String userName, String password) {
-
-//        TblUser s = new TblUser();
-//        s.setUsername(userName);
-//        s.setPassword(password);
-//        TblUser saved = userRepository.save(s);
-//        return Objects.nonNull(saved.getUid());
-        return false;
+    public Mono<UserDO> insertUser(String username, String password) {
+        UserDO user = UserFactory.newUser(username, password);
+        return userRepository.insert(user);
     }
 }

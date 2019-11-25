@@ -7,9 +7,9 @@ server:
 
 
 debug: true
-#spring:
-#  data:
-#    mongodb:
-#      host: localhost
-#      port: 27027
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27027
 
