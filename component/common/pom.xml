@@ -17,26 +17,6 @@
         <!--<relativePath>../pom.xml</relativePath> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncooding>UTF-8</project.reporting.outputEncooding>
-        <!--<java.versin>11</java.version>-->
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-
-    </dependencies>
 
     <build>
         <plugins>
@@ -54,6 +34,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>

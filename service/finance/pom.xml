@@ -17,18 +17,11 @@
         <!--<relativePath>../pom.xml</relativePath> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
 
-    <properties>
-
-    </properties>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <executable>true</executable>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -40,6 +33,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
