@@ -27,7 +27,7 @@
         <module>finance</module>
         <module>user</module>
         <module>document</module>
-<!--        <module>permission</module>-->
+        <module>permission</module>
     </modules>
 
     <packaging>pom</packaging>
