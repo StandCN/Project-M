@@ -1,15 +1,8 @@
-
-server:
-  port: 40000
-  servlet:
-    context-path: /user
-
-
-
 debug: true
-#spring:
-#  data:
-#    mongodb:
-#      host: localhost
-#      port: 27027
+spring:
+  data:
+    mongodb:
+      host: docker.y.home
+      port: 27017
+      database: test
 

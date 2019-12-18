@@ -3,8 +3,7 @@ package com.hellcat.user.controller;
 
 import com.hellcat.user.eneity.UserDO;
 import com.hellcat.user.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
@@ -14,7 +13,7 @@ import reactor.core.publisher.Flux;
  * 2018/7/26 0:32
  */
 @RestController
-public class UserTestController {
+public class UserTestController implements ContextPathController {
 
 
     private final UserService userService;
@@ -23,12 +22,12 @@ public class UserTestController {
         this.userService = userService;
     }
 
-    @GetMapping("all")
+    @RequestMapping(value = "all")
     public Flux<UserDO> listAllUsers() {
         return userService.listUsers();
     }
 
-    @GetMapping("test")
+    @RequestMapping(value = "test")
     public String test() {
         return "test";
     }
