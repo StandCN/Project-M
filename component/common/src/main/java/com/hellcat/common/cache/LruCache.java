@@ -6,11 +6,11 @@ import java.util.HashMap;
 /**
  * @author StandCN
  * 2018/12/21 21:50
- *
- *     Your LRUCache object will be instantiated and called as such:
- *     LRUCache obj = new LRUCache(capacity);
- *     int param_1 = obj.get(key);
- *     obj.put(key,value);
+ * <p>
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache obj = new LRUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
  */
 public class LruCache<K, V> {
 
