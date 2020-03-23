@@ -1,0 +1,11 @@
+#server:
+#  servlet:
+#    context-path: system
+
+#spring:
+#  data:
+#    mongodb:
+#      port: 27017
+#      host: localhost
+#      database: test
+debug: true
