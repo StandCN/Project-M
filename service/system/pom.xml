@@ -13,6 +13,11 @@
     <name>system</name>
     <description>system control</description>
 
+    <dependencies>
+
+
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>

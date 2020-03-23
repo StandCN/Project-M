@@ -6,5 +6,5 @@ spring:
   data:
     mongodb:
       port: 27017
-      host: localhost
-      database: system
+      host:
+      database: system-config
