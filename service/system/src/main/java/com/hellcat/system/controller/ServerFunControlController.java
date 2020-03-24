@@ -10,7 +10,7 @@ import reactor.core.publisher.Mono;
  * 2020/3/23 15:22
  */
 @RestController
-@RequestMapping("/system/control/")
+@RequestMapping("/control/")
 public class ServerFunControlController {
 
     private final ServerFunControlService serverFunControlService;
