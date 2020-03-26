@@ -139,7 +139,7 @@
         <repository>
             <id>local-repo</id>
             <name>Local Repository</name>
-            <url>file://home/stand/.m2/repository</url>
+            <url>file:///home/stand/.m2/repository</url>
         </repository>
         <repository>
             <id>spring-milestones</id>
