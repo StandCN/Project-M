@@ -141,12 +141,22 @@
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
         </repository>
+        <repository>
+            <id>local-repo</id>
+            <name>Local Repository</name>
+            <url>${settings.localRepository}</url>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>local-repo</id>
+            <name>Local Repository</name>
+            <url>${settings.localRepository}</url>
         </pluginRepository>
     </pluginRepositories>
 
