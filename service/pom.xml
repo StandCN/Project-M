@@ -37,6 +37,8 @@
             <groupId>com.hellcat</groupId>
             <artifactId>common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+            <systemPath>${user.home}/.m2/repository/com/hellcat/common/0.0.1-SNAPSHOT/common-0.0.1-SNAPSHOT.jar
+            </systemPath>
         </dependency>
 
         <dependency>
