@@ -144,7 +144,7 @@
         <repository>
             <id>local-repo</id>
             <name>Local Repository</name>
-            <url>${user.home}/.m2/repository</url>
+            <url>file://${user.home}/.m2/repository</url>
         </repository>
     </repositories>
     <pluginRepositories>
