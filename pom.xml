@@ -18,7 +18,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>RELEASE</version>
+        <version>LATEST</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -80,7 +80,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>RELEASE</version>
+            <version>LATEST</version>
         </dependency>
         <dependency>
             <groupId>redis.clients</groupId>
