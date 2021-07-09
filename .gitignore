@@ -8,3 +8,10 @@
 out
 gen
 target
+
+# vsocde
+.vscode
+.project
+.settings
+.classpath
+.factorypath
