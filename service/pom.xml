@@ -17,13 +17,10 @@
         <module>document</module>
         <module>permission</module>
         <module>system</module>
+        <module>stock</module>
     </modules>
 
     <packaging>pom</packaging>
-
-    <properties>
-        <docker.image.prefix>manager/service</docker.image.prefix>
-    </properties>
 
     <dependencies>
 
@@ -166,15 +163,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>13</source>
-                    <target>13</target>
-                </configuration>
-            </plugin>
-
         </plugins>
     </build>
 </project>

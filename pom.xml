@@ -25,9 +25,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>16</java.version>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
+        <java.version>11</java.version>
         <spring-cloud.version>2020.0.2</spring-cloud.version>
         <alibaba-cloud.version>2021.1</alibaba-cloud.version>
         <alibaba-sentinel.version>1.8.1</alibaba-sentinel.version>
@@ -49,7 +47,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>RELEASE</version>
+            <version>[30.0-jre,)</version>
         </dependency>
 
 
@@ -92,10 +90,6 @@
     </dependencyManagement>
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

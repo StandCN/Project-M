@@ -12,11 +12,11 @@
     <artifactId>document</artifactId>
 
     <dependencies>
-        <dependency>
+        <!-- <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web</artifactId>
             <version>4.1.1</version>
-        </dependency>
+        </dependency> -->
     </dependencies>
 
 </project>
